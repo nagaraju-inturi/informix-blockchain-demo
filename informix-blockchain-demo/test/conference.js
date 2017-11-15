@@ -8,9 +8,9 @@ contract('Conference', function(accounts) {
   global.dbobj = require('ifxnjs');
 
 
-  it("==>Get Conference contract address from Informix!", function(done) {
-    getContractFromInformix(owner_account, done);
-  });
+//  it("==>Get Conference contract address from Informix!", function(done) {
+//    getContractFromInformix(owner_account, done);
+//  });
 
   it("==>Check and create conference contract!", function(done) {
 
@@ -101,7 +101,7 @@ function execSql(sql) {
       var result = global.conn.querySync( sql );
       // console.log( sql  );
       console.log( 'Informix: Added new registration record to Informix DB!!');
-      process.exit(0);
+//      process.exit(0);
       }
     catch (e) 
       {
